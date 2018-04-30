@@ -1,0 +1,11 @@
+
+  <% @user.image_feeds.each do | client | %>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="<%= client.photo %>">
+        <img src="<%= client.photo %>" alt="Trolltunga Norway" width="300" height="200">
+      </a>
+      <div class="desc"><%= client.text %></div>
+    </div>
+  </div>
+  <%end%>

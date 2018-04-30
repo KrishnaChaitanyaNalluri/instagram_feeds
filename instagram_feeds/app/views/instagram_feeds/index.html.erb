@@ -1,0 +1,7 @@
+<% if flash[:err].blank? %>
+  <li>
+  <%= link_to "User Recent Media</a> Calls user_recent_media - Get a list of a user's most recent media", '/oauth/connect'%>
+  </li>
+<%else%>
+  <%= flash[:err] %>
+<%end%>
